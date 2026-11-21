@@ -12,7 +12,7 @@ Wavelit can show the time, display custom messages, and remind you when it’s t
 
 ## Getting started
 
-1. Lift Wavelit by its base and place it on a flat, stable surface.
+1. To unpack Wavelit, gently lift it out of the box by its base and place it on a flat, stable surface. If you’d like to secure it in place, use the included double-sided adhesive pad under the base.
 2. Connect the supplied USB-C cable to the back of the base to power it on.
 3. Install [MicroLink for Android or iOS](https://microbots.io/pages/microlink) and enable Bluetooth on your phone.
 4. Open MicroLink, tap **Add**, and select **Wavelit**. The app syncs the time and calibrates the display. Keep the flap clear until calibration finishes.
