@@ -30,7 +30,29 @@ Once setup is complete, Wavelit runs on USB power, even when your phone is disco
 
 ## Custom animations with Arduino
 
-The Wavelit Arduino library lets you create animations for the 11 × 23 pixel display. For a first project, try animating a travelling wave. Draw a sine wave across the display, then shift it a little to one side with each frame.
+The Wavelit Arduino library lets you create animations for the 11 × 23 pixel display and includes several example sketches to help you get started.
+## Custom text, images and animations with Arduino
+
+The Wavelit Arduino library lets you display messages, draw your own pixel art, and loop through animation frames on the 23 × 11 pixel display. The library includes an example sketch for each of these.
+
+### Display a text message
+
+You can enter a message in the MicroLink app or display one directly from an Arduino sketch using `PrintText()`. To try it, open the `Custom_Text_Message` example and change the text inside the quotation marks.
+
+### Display your own image
+
+The `Print_Logo` example uses `PrintImage()` to display a Superman logo. The original PNG is included in the examples folder so you can see how the artwork looks at the display’s native resolution.
+
+1. Create or resize your PNG to **23 pixels wide × 11 pixels high**.
+2. Upload it to the [Digole Picture to C converter](https://www.digole.com/tools/PicturetoC_Hex_converter.php) and choose the **256-colour** output. Each pixel uses one byte in RGB332 format (`RRR GGG BB`), giving you **253 bytes** for the full image.
+3. Open `Print_Logo` and replace the values inside the `superman_logo` array with the bytes from the converter. Keep the array name so the existing `PrintImage()` call displays your artwork.
+4. Upload the sketch to Wavelit.
+
+### Loop and scroll an animation
+
+The `Print_Animation` example alternates between two Space Invader frames and repeats the sequence. Each frame is **46 × 11 pixels**, twice the width of the display. Wavelit automatically scrolls the wider artwork across the display while the frames alternate.
+
+To try it with your own artwork, draw two PNGs at **46 × 11 pixels** and change one detail between them, such as a character’s legs. Convert each PNG separately using the same 256-colour setting, then replace the two frame arrays in `Print_Animation`. Each frame contains **506 bytes**. Upload the sketch to see your character move as it scrolls.
 
 ## Attribution & Third-Party Components
 
