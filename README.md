@@ -1,12 +1,14 @@
 # Wavelit
 
-Wavelit is a tiny persistence-of-vision (POV) display by microbots. As the flap moves back and forth, a single row of RGB LEDs changes colour at precise points in each sweep. The result is an 11 × 23 pixel image that appears to float above the base.
+<img align="right" width="280" src="https://microbots.io/cdn/shop/files/WAVELIT__11__EXTRA_-_Copy_1200x.jpg?v=1778499308" alt="Wavelit pixel display">
 
-![Wavelit displaying an animated wave](https://microbots.io/cdn/shop/files/wavelit_box_600x.gif?v=1755873273)
+Wavelit is a tiny persistence-of-vision (POV) display by microbots. As the flap moves back and forth, a single row of RGB LEDs changes colour at precise points in each sweep. The result is an 11 × 23 pixel image that appears to float above the base.
 
 Wavelit can show the time, display custom messages, and remind you when it’s time to take a break. Choose from 30+ built-in faces and animations and 20+ routines, or use the Wavelit Arduino library to code your own pixel animations.
 
 [Explore Wavelit on microbots.io](https://microbots.io/products/wavelit)
+
+<br clear="right">
 
 ## Getting started
 
@@ -28,7 +30,7 @@ Once setup is complete, Wavelit runs on USB power, even when your phone is disco
 
 ## Custom animations with Arduino
 
-The Wavelit Arduino library lets you create animations for the 11 × 23 pixel display. For a first project, try recreating the wave shown above. Draw a sine wave across the display, then shift it a little to one side with each frame.
+The Wavelit Arduino library lets you create animations for the 11 × 23 pixel display. For a first project, try animating a travelling wave. Draw a sine wave across the display, then shift it a little to one side with each frame.
 
 ## Attribution & Third-Party Components
 
